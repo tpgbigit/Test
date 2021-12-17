@@ -1,0 +1,123 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "Excel LoaiGiaoDichLSRetail",
+        "connectionString": "Data Source=C:\\Users\\Admin\\Desktop\\LoaiGiaoDichLSRetail.xlsx;Persist Security Info=false;Extended Properties=\"Excel 12.0;HDR=No;\";Provider=Microsoft.ACE.OLEDB.12.0",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "Excel"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Final",
+        "columns": [
+          {
+            "name": "F1",
+            "dataType": "double",
+            "sourceColumn": "F1",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "F2",
+            "dataType": "double",
+            "sourceColumn": "F2",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "F3",
+            "dataType": "string",
+            "sourceColumn": "F3",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F4",
+            "dataType": "string",
+            "sourceColumn": "F4",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F5",
+            "dataType": "string",
+            "sourceColumn": "F5",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F6",
+            "dataType": "string",
+            "sourceColumn": "F6",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F7",
+            "dataType": "string",
+            "sourceColumn": "F7",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F8",
+            "dataType": "string",
+            "sourceColumn": "F8",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "F9",
+            "dataType": "string",
+            "sourceColumn": "F9",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Final",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Final$].*   FROM [Final$] ",
+              "dataSource": "Excel LoaiGiaoDichLSRetail"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "a",
+            "expression": "1"
+          },
+          {
+            "name": "b",
+            "expression": "2"
+          },
+          {
+            "name": "c",
+            "expression": "3"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Final$].*   FROM [Final$] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Final$"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
